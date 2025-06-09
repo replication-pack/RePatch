@@ -8,11 +8,11 @@ While most forks on platforms like GitHub are short-lived and used for social co
 * RAM: >= 16 GB
 * Free Storage: >= 15 GB
 * Processor: CPU 1.18 GHz or greater
-
 * Git
 * Java 11
 * IntelliJ (Community Addition) Version 2020.1.2
 * MySQL Database >= 8.0
+* Python >= 3.10
 
 ## Directory Structure and Description
 ```bash
@@ -83,12 +83,6 @@ Follow the steps below to run the experiment:
 The data from the integration pipeline will be stored in the database, `refactoring_aware_integration`. `RePatch` will create the database if it does not already exist. Finally, use the scripts in `analysis` directory to get tables and plots from the data.
 
 ## Analysis and Reproducibility
-We provide SQL scripts, `CSV` files and notebook to support reproduciblity of the results reported in the paper. This can be found in the `analysis` directory. If you want to regenerate the CSV files, setup and populate the database with the data provide in `database` directory
-
-### RQ1
-
-### RQ2
-
-### RQ3
+We provide SQL scripts, `CSV` files and notebook to support reproduciblity of the results reported in the paper. This can be found in the `analysis` directory. If you want to regenerate the CSV files, setup and populate the database with the data provide in `database` directory.
 
 
