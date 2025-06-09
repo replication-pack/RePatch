@@ -68,17 +68,27 @@ it would look like `-PevaluationProject=kafka` if you want to run integration on
 
 Follow the steps below to run the experiment:
 
-1. Add the corresponding integration project to the configuration in the IntelliJ IDE under `Run | Edit Configurations`. For example, `-PevaluationProject=kafka`. 
+1. Create a GitHub token and add it to `github-oauth.properties`. 
+   
+2. Add the corresponding integration project to the configuration in the IntelliJ IDE under `Run | Edit Configurations`. For example, `-PevaluationProject=kafka`. 
 
-2. RePatch will automatically clone the target variant and add the remote source variant. Once this is done stop the running project and open the integration project with the IntelliJ IDEA in a new window. 
+3. RePatch will automatically clone the target variant and add the remote source variant. Once this is done stop the running project and open the integration project with the IntelliJ IDEA in a new window. 
 
-3. Wait for IntelliJ to build the cloned project, then close it.
+4. Wait for IntelliJ to build the cloned project, then close it.
 
-4. Now re-run the `RePatch` by clicking the `Run` button in the IntelliJ IDE.
+5. Now re-run the `RePatch` by clicking the `Run` button in the IntelliJ IDE.
 
-5. Wait for the integration pipeline to finish processing that project.
+6. Wait for the integration pipeline to finish processing that project.
 
 The data from the integration pipeline will be stored in the database, `refactoring_aware_integration`. `RePatch` will create the database if it does not already exist. Finally, use the scripts in `analysis` directory to get tables and plots from the data.
 
+## Analysis and Reproducibility
+We provide SQL scripts, `CSV` files and notebook to support reproduciblity of the results reported in the paper. This can be found in the `analysis` directory. If you want to regenerate the CSV files, setup and populate the database with the data provide in `database` directory
+
+### RQ1
+
+### RQ2
+
+### RQ3
 
 
